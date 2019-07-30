@@ -5,14 +5,20 @@ import java.util.List;
 
 public class StringCalculator {
 
-	public int add(String numbers) {
+	public int add(String numbers) throws CustomException {
 		int result = 0;
 		if(numbers != null && !numbers.isEmpty()) {
 			numbers = formatString(numbers);
 			List<String> numberList = Arrays.asList(numbers.split(","));
 			for (String string : numberList) {
+				int parsedInt;
 				if(!string.isEmpty()) {
-					result = result + Integer.parseInt(string);
+					parsedInt = Integer.parseInt(string);
+					if(parsedInt > 0) {
+						result = result + parsedInt;
+					}else {
+						throw new CustomException(parsedInt);
+					}
 				}
 			}
 		}

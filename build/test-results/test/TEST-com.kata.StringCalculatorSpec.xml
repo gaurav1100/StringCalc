@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kata.StringCalculatorSpec" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-07-30T06:16:39" hostname="ATLANTISPC-1142" time="0.007">
+<testsuite name="com.kata.StringCalculatorSpec" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-07-30T06:43:24" hostname="ATLANTISPC-1142" time="0.013">
   <properties/>
-  <testcase name="Add String number " classname="com.kata.StringCalculatorSpec" time="0.005"/>
-  <testcase name="Add String number 1" classname="com.kata.StringCalculatorSpec" time="0.001"/>
-  <testcase name="Add String number 1,2" classname="com.kata.StringCalculatorSpec" time="0.0"/>
+  <testcase name="Add String number " classname="com.kata.StringCalculatorSpec" time="0.007"/>
+  <testcase name="Add String number 1" classname="com.kata.StringCalculatorSpec" time="0.0"/>
+  <testcase name="Add String number 1,2" classname="com.kata.StringCalculatorSpec" time="0.001"/>
   <testcase name="Add String number 12,2,34" classname="com.kata.StringCalculatorSpec" time="0.0"/>
-  <testcase name="Add String number 1&#10;2,3" classname="com.kata.StringCalculatorSpec" time="0.001"/>
-  <testcase name="Add String number //;&#10;1;2" classname="com.kata.StringCalculatorSpec" time="0.0"/>
-  <system-out><![CDATA[>> 1
->> 1,2
->> 12,2,34
->> 1,2,3
->> ,,1,2
-]]></system-out>
-  <system-err><![CDATA[Jul 30, 2019 2:16:39 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+  <testcase name="Add String number 1&#10;2,3" classname="com.kata.StringCalculatorSpec" time="0.0"/>
+  <testcase name="Add String number //;&#10;1;2" classname="com.kata.StringCalculatorSpec" time="0.001"/>
+  <testcase name="Add String with negatives number -1" classname="com.kata.StringCalculatorSpec" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 30, 2019 2:43:24 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
 INFO: Configuring com.athaydes.spockframework.report.SpockReportExtension
-Jul 30, 2019 2:16:39 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+Jul 30, 2019 2:43:24 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
 INFO: SpockReports config loaded: [com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension:md, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile:/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.IReportCreator:com.athaydes.spockframework.report.internal.HtmlReportCreator, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile:/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss:spock-summary-report.css, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName:summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss:spock-feature-report.css, com.athaydes.spockframework.report.hideEmptyBlocks:false, com.athaydes.spockframework.report.outputDir:build/spock-reports]
-Jul 30, 2019 2:16:39 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+Jul 30, 2019 2:43:24 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
 INFO: Loading settings for reportCreator of type com.athaydes.spockframework.report.internal.HtmlReportCreator
 ]]></system-err>
 </testsuite>

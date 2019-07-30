@@ -26,4 +26,17 @@ class StringCalculatorSpec extends Specification{
 		"//;\n1;2"	||	3
 	}
 	
+	@Unroll
+	def 'Add String with negatives number #input'(){
+		given: 'String negative number input'
+		def error 
+		when: 'StringCalculator.add() method called.'
+			def actualResult = objStringCalc.add(input)
+		then: 'It should return as #expectedMessage'
+			error = thrown(CustomException)
+			error.toString() == expectedMessage
+		where: 'Input values are..'
+		input	| expectedException	| expectedMessage
+		"-1"	| CustomException	| "negatives not allowed [-1]"
+	}
 }
