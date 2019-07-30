@@ -172,7 +172,7 @@ div.footer {
 <hr></hr>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Tue Jul 30 01:58:22 EDT 2019 by gauravd</div>
+<div class='date-test-ran'>Created on Tue Jul 30 02:00:01 EDT 2019 by gauravd</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -184,12 +184,12 @@ div.footer {
 </thead>
 <tbody>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>100.0%</td>
-<td>0.014 seconds</td>
+<td>80.0%</td>
+<td>0.017 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -213,6 +213,10 @@ div.footer {
 </li>
 <li>
 <a href='#-460212641' class='feature-toc-pass'>Add String number 12,2,34</a>
+</li>
+<li>
+<a href='#-1534624135' class='feature-toc-error'>Add String number 1
+2,3</a>
 </li>
 </ul>
 <tr>
@@ -381,6 +385,63 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description error' id='-1534624135'>
+<span>Add String number 1
+2,3</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>A empty string</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>empty string pass</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<pre>java.lang.NumberFormatException: For input string: &quot;1<br/>2&quot;</pre>
+</li>
+</ul>
+</div>
+</div>
 </td>
 </tr>
 </tbody>
