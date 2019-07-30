@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kata.StringCalculatorSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-07-30T05:44:59" hostname="ATLANTISPC-1142" time="0.013">
+<testsuite name="com.kata.StringCalculatorSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-07-30T05:56:21" hostname="ATLANTISPC-1142" time="0.005">
   <properties/>
-  <testcase name="Add String number" classname="com.kata.StringCalculatorSpec" time="0.013">
-    <failure message="java.lang.NumberFormatException: For input string: &quot;1,2&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;1,2&quot;
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at com.kata.StringCalculator.Add(StringCalculator.java:9)
-	at com.kata.StringCalculatorSpec.Add String number(StringCalculatorSpec.groovy:14)
-</failure>
-  </testcase>
+  <testcase name="Add String number " classname="com.kata.StringCalculatorSpec" time="0.005"/>
+  <testcase name="Add String number 1" classname="com.kata.StringCalculatorSpec" time="0.0"/>
+  <testcase name="Add String number 1,2" classname="com.kata.StringCalculatorSpec" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jul 30, 2019 1:44:59 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+  <system-err><![CDATA[Jul 30, 2019 1:56:21 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
 INFO: Configuring com.athaydes.spockframework.report.SpockReportExtension
-Jul 30, 2019 1:44:59 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+Jul 30, 2019 1:56:21 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
 INFO: SpockReports config loaded: [com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension:md, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile:/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.IReportCreator:com.athaydes.spockframework.report.internal.HtmlReportCreator, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile:/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss:spock-summary-report.css, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName:summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss:spock-feature-report.css, com.athaydes.spockframework.report.hideEmptyBlocks:false, com.athaydes.spockframework.report.outputDir:build/spock-reports]
-Jul 30, 2019 1:44:59 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+Jul 30, 2019 1:56:21 AM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
 INFO: Loading settings for reportCreator of type com.athaydes.spockframework.report.internal.HtmlReportCreator
 ]]></system-err>
 </testsuite>

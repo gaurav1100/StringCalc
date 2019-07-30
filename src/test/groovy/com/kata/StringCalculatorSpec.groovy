@@ -2,16 +2,18 @@ package com.kata
 
 import spock.lang.Shared
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class StringCalculatorSpec extends Specification{
 
 	@Shared StringCalculator objStringCalc = new StringCalculator();
 	
-	def 'Add String number'(){
+	@Unroll
+	def 'Add String number #input'(){
 		given: 'A empty string'
 		input
 		when: 'empty string pass'
-			def actualResult = objStringCalc.Add(input)
+			def actualResult = objStringCalc.add(input)
 		then: ''
 			actualResult == expectedResult
 		where: ''
