@@ -21,6 +21,7 @@ class StringCalculatorSpec extends Specification{
 		""		||	0
 		"1"		||	1
 		"1,2"	||	3
+		"12,2,34"	|| 48
 	}
 	
 }
