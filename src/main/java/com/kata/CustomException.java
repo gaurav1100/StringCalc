@@ -3,14 +3,14 @@ package com.kata;
 public class CustomException extends Exception {
 
 	private static final long serialVersionUID = 1L;
-	final int id;
-	public CustomException(int x) {
-		      id = x;
+	final String values;
+	public CustomException(String strNegativeValues) {
+		      values = strNegativeValues;
 		   }
 
 	@Override
 	public String toString() {
-		return "negatives not allowed [" + id + "]";
+		return "negatives not allowed [" + values + "]";
 	}
 
 }

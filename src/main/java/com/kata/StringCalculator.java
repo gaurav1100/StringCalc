@@ -7,6 +7,7 @@ public class StringCalculator {
 
 	public int add(String numbers) throws CustomException {
 		int result = 0;
+		StringBuilder negativeValues = new StringBuilder();
 		if(numbers != null && !numbers.isEmpty()) {
 			numbers = formatString(numbers);
 			List<String> numberList = Arrays.asList(numbers.split(","));
@@ -17,9 +18,13 @@ public class StringCalculator {
 					if(parsedInt > 0) {
 						result = result + parsedInt;
 					}else {
-						throw new CustomException(parsedInt);
+						negativeValues.append(Integer.toString(parsedInt));
+						negativeValues.append(" ");
 					}
 				}
+			}
+			if(negativeValues.length() > 0) {
+				throw new CustomException(negativeValues.toString().trim());
 			}
 		}
 		return result;

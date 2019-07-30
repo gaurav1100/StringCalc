@@ -172,7 +172,7 @@ div.footer {
 <hr></hr>
 <div class='summary-report'>
 <h3>Summary:</h3>
-<div class='date-test-ran'>Created on Tue Jul 30 02:45:43 EDT 2019 by gauravd</div>
+<div class='date-test-ran'>Created on Tue Jul 30 03:18:13 EDT 2019 by gauravd</div>
 <table class='summary-table'>
 <thead>
 <th>Executed features</th>
@@ -185,11 +185,11 @@ div.footer {
 <tbody>
 <tr>
 <td>8</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>87.50%</td>
-<td>0.069 seconds</td>
+<td>0</td>
+<td>100.0%</td>
+<td>0.022 seconds</td>
 </tr>
 </tbody>
 </table>
@@ -226,7 +226,7 @@ div.footer {
 <a href='#-392239569' class='feature-toc-pass'>Add String with negatives number -1</a>
 </li>
 <li>
-<a href='#-1032489448' class='feature-toc-failure'>Add String with negatives number 1,2,-3,-5,6</a>
+<a href='#-1032489448' class='feature-toc-pass'>Add String with negatives number 1,2,-3,-5,6</a>
 </li>
 </ul>
 <tr>
@@ -527,7 +527,7 @@ div.footer {
 </tr>
 <tr>
 <td colspan='10'>
-<div class='feature-description failure' id='-1032489448'>
+<div class='feature-description' id='-1032489448'>
 <span>Add String with negatives number 1,2,-3,-5,6</span>
 <span style='float: right; font-size: 60%;'>
 <a href='#toc'>Return</a>
@@ -556,7 +556,7 @@ div.footer {
 <div class='block-kind'>Then:</div>
 </td>
 <td>
-<div class='block-text'>It should return as negatives not allowed [-3,-5]</div>
+<div class='block-text'>It should return as negatives not allowed [-3 -5]</div>
 </td>
 </tr>
 <tr>
@@ -565,20 +565,6 @@ div.footer {
 </td>
 <td>
 <div class='block-text'>Input values are..</div>
-</td>
-</tr>
-<tr>
-<td colspan='10'>
-<div class='problem-description'>
-<div class='problem-header'>The following problems occurred:</div>
-<div class='problem-list'>
-<ul>
-<li>
-<pre>Condition not satisfied:<br/><br/>error.toString() == expectedMessage<br/>|     |          |  |<br/>|     |          |  negatives not allowed [-3,-5]<br/>|     |          false<br/>|     |          3 differences (89% similarity)<br/>|     |          negatives not allowed [-3(---)]<br/>|     |          negatives not allowed [-3(,-5)]<br/>|     negatives not allowed [-3]<br/>negatives not allowed [-3]<br/></pre>
-</li>
-</ul>
-</div>
-</div>
 </td>
 </tr>
 </tbody>
