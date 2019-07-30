@@ -19,6 +19,4 @@ class StringCalculatorSpec extends Specification{
 		""		||	0
 	}
 	
-	
-	
 }
