@@ -23,6 +23,7 @@ class StringCalculatorSpec extends Specification{
 		"1,2"	||	3
 		"12,2,34"	|| 48
 		"1\n2,3"	||	6
+		"//;\n1;2"	||	3
 	}
 	
 }
