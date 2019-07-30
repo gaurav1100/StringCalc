@@ -8,10 +8,7 @@ public class StringCalculator {
 	public int add(String numbers) {
 		int result = 0;
 		if(numbers != null && !numbers.isEmpty()) {
-			numbers = numbers.replace("\n", ",");
-			numbers = numbers.replace("//", "");
-			numbers = numbers.replace(";", ",");
-			System.out.println(">> "+numbers);
+			numbers = formatString(numbers);
 			List<String> numberList = Arrays.asList(numbers.split(","));
 			for (String string : numberList) {
 				if(!string.isEmpty()) {
@@ -20,6 +17,13 @@ public class StringCalculator {
 			}
 		}
 		return result;
+	}
+
+	private String formatString(String numbers) {
+		numbers = numbers.replace("\n", ",");
+		numbers = numbers.replace("//", "");
+		numbers = numbers.replace(";", ",");
+		return numbers;
 	}
 	
 }
