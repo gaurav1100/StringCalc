@@ -17,6 +17,8 @@ class StringCalculatorSpec extends Specification{
 		where: ''
 		input	||	expectedResult
 		""		||	0
+		"1"		||	1
+		"1,2"	||	3
 	}
 	
 }
