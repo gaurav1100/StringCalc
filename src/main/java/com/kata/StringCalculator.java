@@ -9,9 +9,14 @@ public class StringCalculator {
 		int result = 0;
 		if(numbers != null && !numbers.isEmpty()) {
 			numbers = numbers.replace("\n", ",");
+			numbers = numbers.replace("//", "");
+			numbers = numbers.replace(";", ",");
+			System.out.println(">> "+numbers);
 			List<String> numberList = Arrays.asList(numbers.split(","));
 			for (String string : numberList) {
-				result = result + Integer.parseInt(string);
+				if(!string.isEmpty()) {
+					result = result + Integer.parseInt(string);
+				}
 			}
 		}
 		return result;
