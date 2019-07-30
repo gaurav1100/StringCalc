@@ -10,13 +10,13 @@ class StringCalculatorSpec extends Specification{
 	
 	@Unroll
 	def 'Add String number #input'(){
-		given: 'A empty string'
+		given: 'String input'
 		input
-		when: 'empty string pass'
+		when: 'StringCalculator.add() method called.'
 			def actualResult = objStringCalc.add(input)
-		then: ''
+		then: 'It should return as expectedResult'
 			actualResult == expectedResult
-		where: ''
+		where: 'Input values are..'
 		input	||	expectedResult
 		""		||	0
 		"1"		||	1
