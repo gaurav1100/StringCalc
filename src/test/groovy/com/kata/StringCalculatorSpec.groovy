@@ -38,5 +38,6 @@ class StringCalculatorSpec extends Specification{
 		where: 'Input values are..'
 		input	| expectedException	| expectedMessage
 		"-1"	| CustomException	| "negatives not allowed [-1]"
+		"1,2,-3,-5,6"	| CustomException	| "negatives not allowed [-3,-5]"
 	}
 }
